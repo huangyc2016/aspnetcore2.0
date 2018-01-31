@@ -6,10 +6,6 @@ E:\Huang\swaggerdoc\netcoreapp2.0\HYC.Model.deps.json
 E:\Huang\swaggerdoc\netcoreapp2.0\HYC.Model.dll
 E:\Huang\swaggerdoc\netcoreapp2.0\HYC.Model.pdb
 E:\Huang\swaggerdoc\netcoreapp2.0\model.xml
-E:\core\netcoreapp2.0\HYC.Model.deps.json
-E:\core\netcoreapp2.0\HYC.Model.dll
-E:\core\netcoreapp2.0\HYC.Model.pdb
-E:\core\netcoreapp2.0\model.xml
 E:\Huang\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.csproj.CoreCompileInputs.cache
 E:\Huang\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.AssemblyInfoInputs.cache
 E:\Huang\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.AssemblyInfo.cs

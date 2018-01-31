@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Huang\\HYC.Core\\HYC.Model\\HYC.Model.csproj",
+      "projectUniqueName": "E:\\Huang\\aspnetcore2.0\\HYC.Core\\HYC.Model\\HYC.Model.csproj",
       "projectName": "HYC.Model",
-      "projectPath": "E:\\Huang\\HYC.Core\\HYC.Model\\HYC.Model.csproj",
+      "projectPath": "E:\\Huang\\aspnetcore2.0\\HYC.Core\\HYC.Model\\HYC.Model.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "E:\\Huang\\HYC.Core\\HYC.Model\\obj\\",
+      "outputPath": "E:\\Huang\\aspnetcore2.0\\HYC.Core\\HYC.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

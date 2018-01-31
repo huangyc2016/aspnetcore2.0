@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.Model", "..\HYC.Core\HYC.Model\HYC.Model.csproj", "{A59A17FA-FD16-4A92-BAD0-23FD0968C62A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.Model", "HYC.Model\HYC.Model.csproj", "{A59A17FA-FD16-4A92-BAD0-23FD0968C62A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.WebApi", "..\HYC.Core\HYC.WebApi\HYC.WebApi.csproj", "{DBD2C15D-8484-4F23-85C2-58523A96D886}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.WebApi", "HYC.WebApi\HYC.WebApi.csproj", "{DBD2C15D-8484-4F23-85C2-58523A96D886}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.Common", "HYC.Common\HYC.Common.csproj", "{49FC0E5E-B4F7-46D7-9258-B97A15D76658}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.Repository", "HYC.Repository\HYC.Repository.csproj", "{5182C99D-2DD6-463D-B950-3523FCC6F266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HYC.Service", "HYC.Service\HYC.Service.csproj", "{1477575F-7417-43D5-AE70-156DEC767BF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{DBD2C15D-8484-4F23-85C2-58523A96D886}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBD2C15D-8484-4F23-85C2-58523A96D886}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBD2C15D-8484-4F23-85C2-58523A96D886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49FC0E5E-B4F7-46D7-9258-B97A15D76658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FC0E5E-B4F7-46D7-9258-B97A15D76658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FC0E5E-B4F7-46D7-9258-B97A15D76658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FC0E5E-B4F7-46D7-9258-B97A15D76658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5182C99D-2DD6-463D-B950-3523FCC6F266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5182C99D-2DD6-463D-B950-3523FCC6F266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5182C99D-2DD6-463D-B950-3523FCC6F266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5182C99D-2DD6-463D-B950-3523FCC6F266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1477575F-7417-43D5-AE70-156DEC767BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1477575F-7417-43D5-AE70-156DEC767BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1477575F-7417-43D5-AE70-156DEC767BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1477575F-7417-43D5-AE70-156DEC767BF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

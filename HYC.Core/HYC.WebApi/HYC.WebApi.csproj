@@ -22,7 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HYC.Common\HYC.Common.csproj" />
     <ProjectReference Include="..\HYC.Model\HYC.Model.csproj" />
+    <ProjectReference Include="..\HYC.Repository\HYC.Repository.csproj" />
+    <ProjectReference Include="..\HYC.Service\HYC.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

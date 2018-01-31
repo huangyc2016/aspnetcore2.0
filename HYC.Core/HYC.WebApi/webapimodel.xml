@@ -9,6 +9,12 @@
             首页
             </summary>
         </member>
+        <member name="M:HYC.WebApi.Controllers.HomeController.Add">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:HYC.WebApi.Controllers.HomeController.Login(HYC.Model.Users.LoginInParam)">
             <summary>
             登录验证9092

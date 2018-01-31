@@ -12,6 +12,9 @@ using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.Extensions.PlatformAbstractions;
 using System.IO;
 using HYC.WebApi.swagger;
+using HYC.Common;
+using HYC.Repository;
+using HYC.Service;
 
 namespace HYC.WebApi
 {
@@ -27,6 +30,14 @@ namespace HYC.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //通过选项配置获取数据库连接信息
+            services.AddOptions();
+            services.Configure<SqlHelper>(Configuration.GetSection("ConnectionStrings"));
+
+            //依赖注入模块
+            services.AddSingleton<IUserRepository, UserRepository>();
+            services.AddSingleton<IUserService, UserService>();
+
             services.AddMvc();
 
             // Register the Swagger generator, defining one or more Swagger documents

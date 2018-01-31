@@ -7,6 +7,7 @@ using HYC.WebApi.Filters;
 using HYC.Model.Response;
 using HYC.Model.Users;
 using Microsoft.AspNetCore.Cors;
+using HYC.Service;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,10 +19,31 @@ namespace HYC.WebApi.Controllers
     [Produces("application/json")]
     public class HomeController : BaseController
     {
+        private IUserService _userTodo { get; set; }
+        public HomeController(IUserService userTodo)
+        {
+            this._userTodo = userTodo;
+        }
         // GET: /<controller>/
         public IActionResult Index()
         {
             return Redirect("/swagger/index.html");
+        }
+
+        /// <summary>
+        /// 添加
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("Home/Add")]
+        public ResponseData Add()
+        {
+            UserInfo user = new UserInfo() { UserName = "huangyc", Password = "123456", EMail = "281010937@qq.com" };
+            int r = this._userTodo.Insert(user);
+            var resData = new ResponseData();
+            resData.code = 0;
+            resData.msg = "登录成功";
+            resData.body = r;
+            return resData;
         }
 
         /// <summary>
