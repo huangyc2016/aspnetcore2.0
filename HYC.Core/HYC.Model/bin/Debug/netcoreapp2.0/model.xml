@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HYC.Model</name>
+    </assembly>
+    <members>
+        <member name="P:HYC.Model.Users.Login.UserName">
+            <summary>
+            登录名
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Users.Login.Password">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+    </members>
+</doc>

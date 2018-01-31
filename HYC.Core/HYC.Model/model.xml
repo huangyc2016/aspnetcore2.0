@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HYC.Model</name>
+    </assembly>
+    <members>
+        <member name="T:HYC.Model.Response.ArrayData">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Response.ArrayData.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="T:HYC.Model.Response.ErrorCodeEnum">
+            <summary>
+            错误一般性返回编号
+            </summary>
+        </member>
+        <member name="F:HYC.Model.Response.ErrorCodeEnum.系统发生错误">
+            <summary>
+            系统发生错误10000
+            </summary>
+        </member>
+        <member name="F:HYC.Model.Response.ErrorCodeEnum.IP未授权">
+            <summary>
+            IP未授权10001,
+            </summary>
+        </member>
+        <member name="F:HYC.Model.Response.ErrorCodeEnum.系统维护中">
+            <summary>
+            系统维护中10002,
+            </summary>
+        </member>
+        <member name="F:HYC.Model.Response.ErrorCodeEnum.用户登录失效">
+            <summary>
+            用户登录失效10003,
+            </summary>
+        </member>
+        <member name="F:HYC.Model.Response.ErrorCodeEnum.DES解密失败">
+            <summary>
+            DES解密失败10004,
+            </summary>
+        </member>
+        <member name="F:HYC.Model.Response.ErrorCodeEnum.参数错误">
+            <summary>
+            参数错误10005,
+            </summary>
+        </member>
+        <member name="F:HYC.Model.Response.ErrorCodeEnum.无效的厂商编码">
+            <summary>
+            无效的厂商编码10006
+            </summary>
+        </member>
+        <member name="F:HYC.Model.Response.ErrorCodeEnum.无权限访问">
+            <summary>
+            无权限访问10007
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Response.ResponseData.code">
+            <summary>
+             错误码[0-表示操作成功，大于0表示操作失败]
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Response.ResponseData.msg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Response.ResponseData.body">
+            <summary>
+            响应数据
+            </summary>
+        </member>
+        <member name="T:HYC.Model.Response.ResponseDataArray`1">
+            <summary>
+            返回数组(不带分页总数)
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:HYC.Model.Response.ResponseDataArray`1.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="T:HYC.Model.Response.ResponseDataObj`1">
+            <summary>
+            返回obj
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:HYC.Model.Response.ResponseDataObj`1.Data">
+            <summary>
+            返回对象
+            </summary>
+        </member>
+        <member name="T:HYC.Model.Response.ResponseDataProduces`1">
+            <summary>
+            返回数据
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:HYC.Model.Response.ResponseDataProduces`1.code">
+            <summary>
+             错误码[0-表示操作成功，大于0表示操作失败]
+             10000-系统发生错误,10001-IP未授权,10002-系统维护中,10003-用户登录失效,10004-参数解密失败,10005-参数错误,10006-无效的厂商编码<br />
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Response.ResponseDataProduces`1.msg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Response.ResponseDataProduces`1.body">
+            <summary>
+            响应数据
+            </summary>
+        </member>
+        <member name="T:HYC.Model.Users.Login">
+            <summary>
+            User登录返回实体
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Users.Login.UserID">
+            <summary>
+            会员ID
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Users.Login.UserName">
+            <summary>
+            会员帐号
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Users.Login.Token">
+            <summary>
+            token
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Users.LoginInParam.UserName">
+            <summary>
+            登录名
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Users.LoginInParam.Password">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+    </members>
+</doc>

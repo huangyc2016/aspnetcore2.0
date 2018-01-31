@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HYC.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:HYC.WebApi.Controllers.HomeController">
+            <summary>
+            首页
+            </summary>
+        </member>
+        <member name="M:HYC.WebApi.Controllers.HomeController.Login(HYC.Model.Users.LoginInParam)">
+            <summary>
+            登录验证9092
+            </summary>
+            <param name="inParam">接收对象</param>
+            <remarks>code=0 登录成功，code=1帐号密码错误，code=2 登录失败, code=3 帐号停用 ，code=4 IP验证不通过</remarks>
+            <returns>ResponseData</returns>
+        </member>
+        <member name="M:HYC.WebApi.Controllers.HomeController.GetUserList">
+            <summary>
+            获取会员信息
+            </summary>
+            <remarks>code=0 登出成功</remarks>
+            <returns>ResponseData</returns>
+        </member>
+        <member name="M:HYC.WebApi.Filters.BaseController.GetModelStateError">
+            <summary>
+            model状态错误信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HYC.WebApi.JsonConfig.Configuration.RunEnvironment">
+            <summary>
+            运行环境,控制api文档是否显示Product-生产环境，空为测试环境或者开发环境
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

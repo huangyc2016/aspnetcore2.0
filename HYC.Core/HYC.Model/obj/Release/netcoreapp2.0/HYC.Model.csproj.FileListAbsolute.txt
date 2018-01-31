@@ -1,0 +1,8 @@
+E:\Huang\HYC.Core\HYC.Model\bin\Release\netcoreapp2.0\HYC.Model.deps.json
+E:\Huang\HYC.Core\HYC.Model\bin\Release\netcoreapp2.0\HYC.Model.dll
+E:\Huang\HYC.Core\HYC.Model\bin\Release\netcoreapp2.0\HYC.Model.pdb
+E:\Huang\HYC.Core\HYC.Model\obj\Release\netcoreapp2.0\HYC.Model.csproj.CoreCompileInputs.cache
+E:\Huang\HYC.Core\HYC.Model\obj\Release\netcoreapp2.0\HYC.Model.AssemblyInfoInputs.cache
+E:\Huang\HYC.Core\HYC.Model\obj\Release\netcoreapp2.0\HYC.Model.AssemblyInfo.cs
+E:\Huang\HYC.Core\HYC.Model\obj\Release\netcoreapp2.0\HYC.Model.dll
+E:\Huang\HYC.Core\HYC.Model\obj\Release\netcoreapp2.0\HYC.Model.pdb

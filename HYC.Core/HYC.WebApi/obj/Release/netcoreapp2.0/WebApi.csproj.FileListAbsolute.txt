@@ -1,0 +1,15 @@
+E:\Huang\HYC.Core\WebApi\bin\Release\netcoreapp2.0\WebApi.deps.json
+E:\Huang\HYC.Core\WebApi\bin\Release\netcoreapp2.0\WebApi.runtimeconfig.json
+E:\Huang\HYC.Core\WebApi\bin\Release\netcoreapp2.0\WebApi.runtimeconfig.dev.json
+E:\Huang\HYC.Core\WebApi\bin\Release\netcoreapp2.0\WebApi.dll
+E:\Huang\HYC.Core\WebApi\bin\Release\netcoreapp2.0\WebApi.pdb
+E:\Huang\HYC.Core\WebApi\obj\Release\netcoreapp2.0\WebApi.csproj.CoreCompileInputs.cache
+E:\Huang\HYC.Core\WebApi\obj\Release\netcoreapp2.0\WebApi.AssemblyInfoInputs.cache
+E:\Huang\HYC.Core\WebApi\obj\Release\netcoreapp2.0\WebApi.AssemblyInfo.cs
+E:\Huang\HYC.Core\WebApi\obj\Release\netcoreapp2.0\WebApi.dll
+E:\Huang\HYC.Core\WebApi\obj\Release\netcoreapp2.0\WebApi.pdb
+E:\Huang\HYC.Core\WebApi\bin\Release\netcoreapp2.0\webapimodel.xml
+E:\Huang\HYC.Core\WebApi\bin\Release\netcoreapp2.0\model.xml
+E:\Huang\HYC.Core\WebApi\bin\Release\netcoreapp2.0\HYC.Model.dll
+E:\Huang\HYC.Core\WebApi\bin\Release\netcoreapp2.0\HYC.Model.pdb
+E:\Huang\HYC.Core\WebApi\obj\Release\netcoreapp2.0\WebApi.csprojResolveAssemblyReference.cache
