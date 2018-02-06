@@ -7,7 +7,7 @@ using HYC.WebApi.Filters;
 using HYC.Model.Response;
 using HYC.Model.Users;
 using Microsoft.AspNetCore.Cors;
-using HYC.Service;
+using HYC.IService;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -43,6 +43,21 @@ namespace HYC.WebApi.Controllers
             resData.code = 0;
             resData.msg = "登录成功";
             resData.body = r;
+            return resData;
+        }
+
+        /// <summary>
+        /// 通过ID获取一条用户信息
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("Home/GetByID")]
+        public ResponseData GetByID(int ID)
+        {
+            UserInfo user = this._userTodo.GetByID(ID);
+            var resData = new ResponseData();
+            resData.code = 0;
+            resData.msg = "";
+            resData.body = user;
             return resData;
         }
 

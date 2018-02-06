@@ -1,7 +1,9 @@
 ﻿using HYC.Model.Users;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace HYC.Service
+namespace HYC.IService
 {
     public interface IUserService
     {
@@ -12,5 +14,6 @@ namespace HYC.Service
         /// <returns></returns>
         int Insert(UserInfo entity);
 
+        UserInfo GetByID(int ID);
     }
 }

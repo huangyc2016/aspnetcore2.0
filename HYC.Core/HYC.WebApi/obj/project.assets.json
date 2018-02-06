@@ -4833,6 +4833,32 @@
           "bin/placeholder/HYC.Common.dll": {}
         }
       },
+      "HYC.IRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "HYC.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HYC.IRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HYC.IRepository.dll": {}
+        }
+      },
+      "HYC.IService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "HYC.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HYC.IService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HYC.IService.dll": {}
+        }
+      },
       "HYC.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -4848,6 +4874,7 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "HYC.Common": "1.0.0",
+          "HYC.IRepository": "1.0.0",
           "HYC.Model": "1.0.0"
         },
         "compile": {
@@ -4861,6 +4888,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "HYC.IService": "1.0.0",
           "HYC.Repository": "1.0.0"
         },
         "compile": {
@@ -12728,6 +12756,16 @@
       "type": "project",
       "path": "../HYC.Common/HYC.Common.csproj",
       "msbuildProject": "../HYC.Common/HYC.Common.csproj"
+    },
+    "HYC.IRepository/1.0.0": {
+      "type": "project",
+      "path": "../HYC.IRepository/HYC.IRepository.csproj",
+      "msbuildProject": "../HYC.IRepository/HYC.IRepository.csproj"
+    },
+    "HYC.IService/1.0.0": {
+      "type": "project",
+      "path": "../HYC.IService/HYC.IService.csproj",
+      "msbuildProject": "../HYC.IService/HYC.IService.csproj"
     },
     "HYC.Model/1.0.0": {
       "type": "project",

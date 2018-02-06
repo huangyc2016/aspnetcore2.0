@@ -1,8 +1,7 @@
-﻿using HYC.Model.Users;
-using HYC.Repository;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using HYC.IRepository;
+using HYC.IService;
+using HYC.Model.Users;
+
 
 namespace HYC.Service
 {
@@ -17,6 +16,16 @@ namespace HYC.Service
         public int Insert(UserInfo entity)
         {
             return _userRepository.Insert(entity);
+        }
+
+        /// <summary>
+        /// 通过ID获取用户信息
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        public UserInfo GetByID(int ID)
+        {
+            return _userRepository.GetByID(ID);
         }
     }
 }

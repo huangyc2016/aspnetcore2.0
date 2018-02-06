@@ -17,3 +17,13 @@ E:\Huang\HYC.Core2\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.AssemblyInfoInput
 E:\Huang\HYC.Core2\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.AssemblyInfo.cs
 E:\Huang\HYC.Core2\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.dll
 E:\Huang\HYC.Core2\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.pdb
+E:\core\netcoreapp2.0\HYC.Model.deps.json
+E:\core\netcoreapp2.0\HYC.Model.dll
+E:\core\netcoreapp2.0\HYC.Model.pdb
+E:\core\netcoreapp2.0\model.xml
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.csproj.CoreCompileInputs.cache
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.AssemblyInfoInputs.cache
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.AssemblyInfo.cs
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.dll
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.pdb
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.csprojResolveAssemblyReference.cache

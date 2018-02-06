@@ -11,5 +11,7 @@ namespace HYC.IRepository
         /// <param name="entity"></param>
         /// <returns></returns>
         int Insert(T entity);
+
+        T GetByID(int ID);
     }
 }

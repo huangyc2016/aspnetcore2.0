@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.Common", "HYC.Common\HY
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.Repository", "HYC.Repository\HYC.Repository.csproj", "{5182C99D-2DD6-463D-B950-3523FCC6F266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HYC.Service", "HYC.Service\HYC.Service.csproj", "{1477575F-7417-43D5-AE70-156DEC767BF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.Service", "HYC.Service\HYC.Service.csproj", "{1477575F-7417-43D5-AE70-156DEC767BF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.IService", "HYC.IService\HYC.IService.csproj", "{C976D8A1-D3DA-40E3-8014-FA0AD797D5B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.IRepository", "HYC.IRepository\HYC.IRepository.csproj", "{45B5BC6E-FCE3-4694-8A00-52F644D378C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{1477575F-7417-43D5-AE70-156DEC767BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1477575F-7417-43D5-AE70-156DEC767BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1477575F-7417-43D5-AE70-156DEC767BF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C976D8A1-D3DA-40E3-8014-FA0AD797D5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C976D8A1-D3DA-40E3-8014-FA0AD797D5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C976D8A1-D3DA-40E3-8014-FA0AD797D5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C976D8A1-D3DA-40E3-8014-FA0AD797D5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B5BC6E-FCE3-4694-8A00-52F644D378C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B5BC6E-FCE3-4694-8A00-52F644D378C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B5BC6E-FCE3-4694-8A00-52F644D378C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B5BC6E-FCE3-4694-8A00-52F644D378C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

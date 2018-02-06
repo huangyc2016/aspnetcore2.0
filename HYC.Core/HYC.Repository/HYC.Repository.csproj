@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HYC.Common\HYC.Common.csproj" />
+    <ProjectReference Include="..\HYC.IRepository\HYC.IRepository.csproj" />
     <ProjectReference Include="..\HYC.Model\HYC.Model.csproj" />
   </ItemGroup>
 

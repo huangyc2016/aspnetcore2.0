@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HYC.IService\HYC.IService.csproj" />
-    <ProjectReference Include="..\HYC.Repository\HYC.Repository.csproj" />
+    <ProjectReference Include="..\HYC.Model\HYC.Model.csproj" />
   </ItemGroup>
 
 </Project>

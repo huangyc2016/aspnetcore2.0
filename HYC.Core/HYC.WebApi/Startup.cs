@@ -13,8 +13,7 @@ using Microsoft.Extensions.PlatformAbstractions;
 using System.IO;
 using HYC.WebApi.swagger;
 using HYC.Common;
-using HYC.Repository;
-using HYC.Service;
+using System.Reflection;
 
 namespace HYC.WebApi
 {
@@ -30,13 +29,12 @@ namespace HYC.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //通过选项配置获取数据库连接信息
+            //通过选项配置获取数据库连接信息 
             services.AddOptions();
             services.Configure<SqlHelper>(Configuration.GetSection("ConnectionStrings"));
 
-            //依赖注入模块
-            services.AddSingleton<IUserRepository, UserRepository>();
-            services.AddSingleton<IUserService, UserService>();
+            //依赖注入模块(HYC.Service,HYC.Repository)
+            AddScopeds(services);
 
             services.AddMvc();
 
@@ -94,6 +92,37 @@ namespace HYC.WebApi
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        /// <summary>
+        /// 自动处理依赖注入(每个方法都用接口调用,因此每个类的实现都需要继承接口)
+        /// </summary>
+        /// <param name="services"></param>
+        private void AddScopeds(IServiceCollection services)
+        {
+            //依赖注入HYC.Service
+            Assembly assembly = Assembly.Load("HYC.Service");
+            Type[] types = assembly.GetTypes();
+            foreach (var t in types)
+            { 
+               Type[] itypes= t.GetInterfaces();
+                foreach (var it in itypes)
+                {
+                    services.AddScoped(it, t);
+                }
+            }
+
+            //依赖注入HYC.Repository
+            assembly = Assembly.Load("HYC.Repository");
+            types = assembly.GetTypes();
+            foreach (var t in types)
+            {
+                Type[] itypes = t.GetInterfaces();
+                foreach (var it in itypes)
+                {
+                    services.AddScoped(it, t);
+                }
+            }
         }
     }
 }

@@ -15,6 +15,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:HYC.WebApi.Controllers.HomeController.GetByID(System.Int32)">
+            <summary>
+            通过ID获取一条用户信息
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:HYC.WebApi.Controllers.HomeController.Login(HYC.Model.Users.LoginInParam)">
             <summary>
             登录验证9092
@@ -41,6 +47,12 @@
             运行环境,控制api文档是否显示Product-生产环境，空为测试环境或者开发环境
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:HYC.WebApi.Startup.AddScopeds(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            自动处理依赖注入(每个方法都用接口调用,因此每个类的实现都需要继承接口)
+            </summary>
+            <param name="services"></param>
         </member>
     </members>
 </doc>

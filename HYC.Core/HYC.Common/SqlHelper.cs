@@ -7,31 +7,31 @@ namespace HYC.Common
     public class SqlHelper
     {
 
-        public  string sqlConnectionLeo { get; set; }
-        public  string sqlConnectionHyc { get; set; }
+        public  string sqlConnectionBasic { get; set; }
+        public  string sqlConnectionRise { get; set; }
 
-      
+
 
         #region Data库连接
         /// <summary>
-        /// Leo库
+        /// BasicDB
         /// </summary>
-        public IDbConnection LeoDB
+        public IDbConnection BasicDB
         {
             get
             {
-                return GetSqlConnection(this.sqlConnectionLeo);
+                return GetSqlConnection(this.sqlConnectionBasic);
             }
         }
 
         /// <summary>
-        /// Hyc库
+        /// RiseDB
         /// </summary>
-        public IDbConnection HycDB
+        public IDbConnection RiseDB
         {
             get
             {
-                return GetSqlConnection(this.sqlConnectionHyc);
+                return GetSqlConnection(this.sqlConnectionRise);
             }
         }
         #endregion
