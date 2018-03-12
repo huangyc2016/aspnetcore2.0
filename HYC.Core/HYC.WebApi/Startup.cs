@@ -13,7 +13,9 @@ using Microsoft.Extensions.PlatformAbstractions;
 using System.IO;
 using HYC.WebApi.swagger;
 using HYC.Common;
-using System.Reflection;
+using HYC.IRepository;
+using HYC.Repository;
+
 
 namespace HYC.WebApi
 {
@@ -95,34 +97,12 @@ namespace HYC.WebApi
         }
 
         /// <summary>
-        /// 自动处理依赖注入(每个方法都用接口调用,因此每个类的实现都需要继承接口)
+        /// 依赖注入逻辑业务服务和仓储
         /// </summary>
         /// <param name="services"></param>
         private void AddScopeds(IServiceCollection services)
         {
-            //依赖注入HYC.Service
-            Assembly assembly = Assembly.Load("HYC.Service");
-            Type[] types = assembly.GetTypes();
-            foreach (var t in types)
-            { 
-               Type[] itypes= t.GetInterfaces();
-                foreach (var it in itypes)
-                {
-                    services.AddScoped(it, t);
-                }
-            }
-
-            //依赖注入HYC.Repository
-            assembly = Assembly.Load("HYC.Repository");
-            types = assembly.GetTypes();
-            foreach (var t in types)
-            {
-                Type[] itypes = t.GetInterfaces();
-                foreach (var it in itypes)
-                {
-                    services.AddScoped(it, t);
-                }
-            }
+            services.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }

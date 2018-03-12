@@ -26,3 +26,4 @@ E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.Asse
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.AssemblyInfo.cs
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.dll
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.pdb
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.Model\obj\Debug\netcoreapp2.0\HYC.Model.csprojResolveAssemblyReference.cache

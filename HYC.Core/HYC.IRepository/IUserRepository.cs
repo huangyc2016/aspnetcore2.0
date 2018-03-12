@@ -5,7 +5,10 @@ using System.Text;
 
 namespace HYC.IRepository
 {
-    public interface IUserRepository: IBaseRepository<UserInfo>
+    public interface IUserRepository: IBaseRepository<UserData>
     {
+        UserData Login(string userName, string password);
+
+        bool ValidateLastChanged(string userName, string lastChanged);
     }
 }

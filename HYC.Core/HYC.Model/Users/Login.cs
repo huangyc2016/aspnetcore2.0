@@ -12,7 +12,7 @@ namespace HYC.Model.Users
         /// <summary>
         /// 会员ID
         /// </summary>
-        public Int64 UserID { get; set; }
+        public Int64 ID { get; set; }
 
         /// <summary>
         /// 会员帐号
@@ -23,6 +23,11 @@ namespace HYC.Model.Users
         /// <summary>
         /// token
         /// </summary>
-        public string Token { get; set; }
+        public string Email { get; set; }
+
+        /// <summary>
+        /// 最后修改时间
+        /// </summary>
+        public DateTime LastChanged { get; set; }
     }
 }

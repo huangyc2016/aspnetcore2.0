@@ -1,0 +1,16 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "admin-lte": "v2.4.3",
+    "iCheck": "1.0.2",
+    "layer": "v3.1.1",
+    "bootstrap-paginator": "v0.5"
+  },
+  "resolutions": {
+    "bootstrap": "v4.0.0",
+    "jquery": ">=1.10",
+    "admin-lte": "v2.4.3",
+    "layer": "v3.1.1"
+  }
+}

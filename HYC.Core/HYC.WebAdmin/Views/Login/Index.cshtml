@@ -1,0 +1,120 @@
+﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+@{
+    Layout = null;
+}
+@model LoginModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>系统登录</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="~/font-awesome-4.7.0/css/font-awesome.css">
+        <!-- Font AdminLTE -->
+        <link rel="stylesheet" href="~/css/AdminLTE.css">
+        <link rel="stylesheet" href="~/lib/iCheck/skins/square/blue.css">
+
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+              asp-fallback-href="~/font-awesome-4.7.0/css/font-awesome.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="~/css/AdminLTE.min.css" asp-append-version="true">
+        <link rel="stylesheet" href="~/css/skins/blue.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/lib/iCheck/skins/square/blue.css">
+
+    </environment>
+    @Html.Raw(JavaScriptSnippet.FullScript)
+
+
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="http://fonour.cnblogs.com" target="_blank"><b>Fonour</b></a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="login-box-body">
+            <p class="login-box-msg">权限管理系统</p>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <form asp-controller="Login" asp-action="Index" method="post">
+                <input id="errorInfo" type="hidden" value="@ViewBag.ErrorInfo" />
+                <div class="form-group has-feedback">
+                    <input asp-for="UserName" type="text" class="form-control" placeholder="用户名">
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input asp-for="Password" type="password" class="form-control" placeholder="密码">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="checkbox icheck">
+                            <label>
+                                <input asp-for="RememberMe" type="checkbox"> 记住我
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-4">
+                        <button type="submit" id="btnLogin" class="btn btn-primary btn-block btn-flat">登录</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+        </div>
+        <!-- /.login-box-body -->
+    </div>
+
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/iCheck/icheck.js" asp-append-version="true"></script>
+        <script src="~/lib/layer/src/layer.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/lib/iCheck/icheck.js"></script>
+        <script src="~/lib/layer/build/layer.js"></script>
+    </environment>
+
+    <script>
+        $(function () {
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+                increaseArea: '20%' // optional
+            });
+            //显示服务端验证的错误信息
+            if ($("#errorInfo").val()) {
+                layer.tips($("#errorInfo").val(), "#btnLogin");
+            };
+
+        });
+    </script>
+</body>
+
+</html>

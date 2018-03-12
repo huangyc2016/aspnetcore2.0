@@ -7,7 +7,8 @@ using HYC.WebApi.Filters;
 using HYC.Model.Response;
 using HYC.Model.Users;
 using Microsoft.AspNetCore.Cors;
-using HYC.IService;
+using Microsoft.AspNetCore.Authorization;
+using HYC.IRepository;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -19,8 +20,8 @@ namespace HYC.WebApi.Controllers
     [Produces("application/json")]
     public class HomeController : BaseController
     {
-        private IUserService _userTodo { get; set; }
-        public HomeController(IUserService userTodo)
+        private IUserRepository _userTodo { get; set; }
+        public HomeController(IUserRepository userTodo)
         {
             this._userTodo = userTodo;
         }
@@ -37,7 +38,7 @@ namespace HYC.WebApi.Controllers
         [HttpGet("Home/Add")]
         public ResponseData Add()
         {
-            UserInfo user = new UserInfo() { UserName = "huangyc", Password = "123456", EMail = "281010937@qq.com" };
+            UserData user = new UserData() { UserName = "huangyc", Password = "123456", EMail = "281010937@qq.com" };
             int r = this._userTodo.Insert(user);
             var resData = new ResponseData();
             resData.code = 0;
@@ -53,7 +54,7 @@ namespace HYC.WebApi.Controllers
         [HttpGet("Home/GetByID")]
         public ResponseData GetByID(int ID)
         {
-            UserInfo user = this._userTodo.GetByID(ID);
+            UserData user = this._userTodo.GetByID(ID);
             var resData = new ResponseData();
             resData.code = 0;
             resData.msg = "";
@@ -84,8 +85,7 @@ namespace HYC.WebApi.Controllers
             resData.msg = "登录成功";
             resData.body = new Login()
             {
-                UserID = 1,
-                Token = "abcdefg",
+                ID = 1,
                 UserName = "huangyc",
             };
             return resData;
@@ -100,13 +100,13 @@ namespace HYC.WebApi.Controllers
         [HttpGet("Home/GetUserList")]
         public ResponseData GetUserList()
         {
-            List<UserInfo> list = new List<UserInfo>();
-            list.Add(new UserInfo() { UserName = "huangyc1", EMail = "281010937@qq.com" });
-            list.Add(new UserInfo() { UserName = "huangyc2", EMail = "281010937@qq.com" });
+            List<UserData> list = new List<UserData>();
+            list.Add(new UserData() { UserName = "huangyc1", EMail = "281010937@qq.com" });
+            list.Add(new UserData() { UserName = "huangyc2", EMail = "281010937@qq.com" });
             return new ResponseData()
             {
                 code = 0,
-                body = new ResponseDataArray<UserInfo>() { Data = list }
+                body = new ResponseDataArray<UserData>() { Data = list }
             };
         }
     }

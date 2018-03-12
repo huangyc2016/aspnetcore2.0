@@ -4,6 +4,161 @@
         <name>HYC.Model</name>
     </assembly>
     <members>
+        <member name="T:HYC.Model.Permission.ActionAuthorizes">
+            <summary>
+            功能授权类
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.ActionAuthorizes.Id">
+            <summary>
+            功能授权Id
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.ActionAuthorizes.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.ActionAuthorizes.ActionId">
+            <summary>
+            功能Id
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.ActionAuthorizes.ActionName">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="T:HYC.Model.Permission.ActionGroups">
+            <summary>
+            功能组类
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.ActionGroups.Id">
+            <summary>
+            功能组Id
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.ActionGroups.Name">
+            <summary>
+            功能组名称
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.ActionGroups.Description">
+            <summary>
+            功能组描述
+            </summary>
+        </member>
+        <member name="T:HYC.Model.Permission.Actions">
+            <summary>
+            功能类
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Actions.Id">
+            <summary>
+            功能Id
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Actions.Name">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Actions.ActionGroupId">
+            <summary>
+            功能组Id
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Actions.ControllerId">
+            <summary>
+            控制器Id
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Actions.Description">
+            <summary>
+            功能描述
+            </summary>
+        </member>
+        <member name="T:HYC.Model.Permission.Controllers">
+            <summary>
+            控制器类
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Controllers.Id">
+            <summary>
+            控制器Id
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Controllers.Name">
+            <summary>
+            控制器名称
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Controllers.Description">
+            <summary>
+            控制器描述
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Controllers.ActionNum">
+            <summary>
+            所属功能项数目
+            </summary>
+        </member>
+        <member name="T:HYC.Model.Permission.Menus">
+            <summary>
+            菜单
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.Id">
+            <summary>
+            菜单Id
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.ParentId">
+            <summary>
+            菜单父级ID
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.SortNum">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.DepthNum">
+            <summary>
+            层级深度
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.Code">
+            <summary>
+            菜单编码
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.Url">
+            <summary>
+            菜单地址
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.Type">
+            <summary>
+            0:功能菜单;1:操作按钮
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.Icon">
+            <summary>
+            菜单图标
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Permission.Menus.Description">
+            <summary>
+            菜单说明描述
+            </summary>
+        </member>
         <member name="T:HYC.Model.Response.ArrayData">
             <summary>
             返回数据
@@ -123,7 +278,7 @@
             User登录返回实体
             </summary>
         </member>
-        <member name="P:HYC.Model.Users.Login.UserID">
+        <member name="P:HYC.Model.Users.Login.ID">
             <summary>
             会员ID
             </summary>
@@ -133,9 +288,14 @@
             会员帐号
             </summary>
         </member>
-        <member name="P:HYC.Model.Users.Login.Token">
+        <member name="P:HYC.Model.Users.Login.Email">
             <summary>
             token
+            </summary>
+        </member>
+        <member name="P:HYC.Model.Users.Login.LastChanged">
+            <summary>
+            最后修改时间
             </summary>
         </member>
         <member name="P:HYC.Model.Users.LoginInParam.UserName">

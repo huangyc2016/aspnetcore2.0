@@ -50,7 +50,7 @@
         </member>
         <member name="M:HYC.WebApi.Startup.AddScopeds(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
-            自动处理依赖注入(每个方法都用接口调用,因此每个类的实现都需要继承接口)
+            依赖注入逻辑业务服务和仓储
             </summary>
             <param name="services"></param>
         </member>

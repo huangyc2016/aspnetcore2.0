@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-paginator",
+  "homepage": "https://github.com/lyonlai/bootstrap-paginator",
+  "version": "0.5.1",
+  "_release": "0.5.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.1",
+    "commit": "0d4e2b5546044fe9e918adeb0a9009aeeb65e1b3"
+  },
+  "_source": "https://github.com/lyonlai/bootstrap-paginator.git",
+  "_target": "v0.5",
+  "_originalSource": "bootstrap-paginator",
+  "_direct": true
+}

@@ -10,8 +10,6 @@ namespace HYC.Common
         public  string sqlConnectionBasic { get; set; }
         public  string sqlConnectionRise { get; set; }
 
-
-
         #region Data库连接
         /// <summary>
         /// BasicDB
@@ -35,6 +33,8 @@ namespace HYC.Common
             }
         }
         #endregion
+
+       
 
         /// <summary>
         /// 数据统计连接对象(open)
