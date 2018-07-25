@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.JwtApi", "HYC.JwtApi\HY
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.Services", "HYC.Services\HYC.Services.csproj", "{D29F0791-BA9C-4FC1-853C-125DAE0302F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HYC.ConsoleApp", "HYC.ConsoleApp\HYC.ConsoleApp.csproj", "{4C4D2C92-DF8B-451F-BB1E-A72D8A3FE805}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HYC.ConsoleApp", "HYC.ConsoleApp\HYC.ConsoleApp.csproj", "{4C4D2C92-DF8B-451F-BB1E-A72D8A3FE805}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
