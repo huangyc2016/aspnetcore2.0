@@ -43,10 +43,6 @@ E:\Huang\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.AssemblyInfoInpu
 E:\Huang\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.AssemblyInfo.cs
 E:\Huang\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.dll
 E:\Huang\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.pdb
-E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.csprojResolveAssemblyReference.cache
-E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.csproj.CoreCompileInputs.cache
-E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.AssemblyInfoInputs.cache
-E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.AssemblyInfo.cs
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\bin\Debug\netcoreapp2.0\model.xml
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\bin\Debug\netcoreapp2.0\webapimodel.xml
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\bin\Debug\netcoreapp2.0\HYC.WebApi.deps.json
@@ -62,5 +58,9 @@ E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\bin\Debug\netcoreapp2.0\HYC.Common.pd
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\bin\Debug\netcoreapp2.0\HYC.Model.pdb
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\bin\Debug\netcoreapp2.0\HYC.Repository.pdb
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\bin\Debug\netcoreapp2.0\HYC.IRepository.pdb
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.csprojResolveAssemblyReference.cache
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.csproj.CoreCompileInputs.cache
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.AssemblyInfoInputs.cache
+E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.AssemblyInfo.cs
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.dll
 E:\Huang\aspnetcore2.0\HYC.Core\HYC.WebApi\obj\Debug\netcoreapp2.0\HYC.WebApi.pdb
